@@ -1,0 +1,14 @@
+package com.enuygun.cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        glue = {"com/enuygun/stepdefinitions"},
+        features = "src/main/resources/features",
+        tags = "@paralel",
+        plugin = {"pretty", "summary"})
+
+public class RunCucumberTest  {
+}
